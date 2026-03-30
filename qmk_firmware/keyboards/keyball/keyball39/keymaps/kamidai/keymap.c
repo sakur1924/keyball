@@ -53,6 +53,7 @@
 // #include "features/back_to_layer0_btn1.h"
 // #include "features/one_tap_multi_click.h"
 #include "features/macro_keys.h"
+#include "features/combo.h"
 
 // 容量オーバーのため不使用（VIAをOFFにすれば、使用可能）
 // #include "features/overrides.h"
