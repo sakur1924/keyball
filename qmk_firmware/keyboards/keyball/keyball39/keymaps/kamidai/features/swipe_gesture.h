@@ -31,8 +31,8 @@ bool is_repeat = false;
 // 上、下、左、右の4つのオプションがあります
 void process_swipe_gesture(int16_t x, int16_t y) {
   // Alt
-  if (current_keycode == (KC_F13)) {
-    
+  if (current_keycode == ALT_T(KC_F13)) {
+    unregister_code(KC_LALT);
 
     // 拡大と縮小
     if (my_abs(x) < my_abs(y)) {
@@ -61,9 +61,8 @@ void process_swipe_gesture(int16_t x, int16_t y) {
         tap_code(KC_RIGHT);
       }
     }
-    unregister_code(KC_APP);
+    unregister_code(KC_LCMD);
     unregister_code(KC_LCTL);
-    unregister_code(KC_TAB)
 
     register_code(KC_LALT);
   }
