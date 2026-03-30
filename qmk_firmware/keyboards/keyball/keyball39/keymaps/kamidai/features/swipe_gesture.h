@@ -104,7 +104,7 @@ void process_swipe_gesture(int16_t x, int16_t y) {
     if (my_abs(x) < my_abs(y)) {
       if (y < 0) {
         // swipe up: ウィンドウを最大化
-        register_code(KC_LCMD);
+        tap_code(KC_LCMD);
         tap_code(KC_TAB);
       } else {
         // swipe down: ウインドウを最小サイズで中央へ
@@ -114,7 +114,7 @@ void process_swipe_gesture(int16_t x, int16_t y) {
     // ウインドウのサイズ変更と移動（BetterTouchToolで設定）
     if (my_abs(x) > my_abs(y)) {
       register_code(KC_LCMD);
-      register_code(KC_APP);
+      register_code(KC_LCTL);
       if (x < 0) {
         // swipe left: ウインドウを1/2サイズで左へ
         tap_code(KC_LEFT);
