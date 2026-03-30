@@ -84,10 +84,10 @@ void process_swipe_gesture(int16_t x, int16_t y) {
     if (my_abs(x) > my_abs(y)) {
       if (x < 0) {
         // swipe left: 戻る
-        tap_code(KC_LBRACKET);
+        tap_code(KC_LBRC);
       } else {
         // swipe right: 進む
-        tap_code(KC_RBRACKET);
+        tap_code(KC_RBRC);
       }
     }
     unregister_code(KC_LCMD);
@@ -169,7 +169,7 @@ void process_swipe_gesture(int16_t x, int16_t y) {
   //     if (x > 0)
   //     { // swipe right
   //       // register_code16(HYPR(KC_RIGHT));
-  //       // tap_code(KC_RBRACKET);
+  //       // tap_code(KC_RBRC);
   //       tap_code(KC_LEFT);
   //       // unregister_code(KC_LCMD);
   //     }
@@ -214,11 +214,11 @@ void process_swipe_gesture(int16_t x, int16_t y) {
   //   { // 英かな切り替え
   //     if (x > 0)
   //     { // swipe right
-  //       tap_code(KC_RBRACKET);
+  //       tap_code(KC_RBRC);
   //     }
   //     else
   //     { // swipe left
-  //       tap_code(KC_LBRACKET);
+  //       tap_code(KC_LBRC);
   //     }
   //   }
 

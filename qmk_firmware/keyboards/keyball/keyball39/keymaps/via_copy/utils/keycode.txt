@@ -43,11 +43,11 @@ KC_TAB		Tab	✔	✔	✔
 KC_SPACE	KC_SPC	Spacebar	✔	✔	✔
 KC_MINUS	KC_MINS	- と _	✔	✔	✔
 KC_EQUAL	KC_EQL	= と +	✔	✔	✔
-KC_LBRACKET	KC_LBRC	[ と {	✔	✔	✔
-KC_RBRACKET	KC_RBRC	] と }	✔	✔	✔
-KC_BSLASH	KC_BSLS	\ と |	✔	✔	✔
+KC_LBRC	KC_LBRC	[ と {	✔	✔	✔
+KC_RBRC	KC_RBRC	] と }	✔	✔	✔
+KC_SLASH	KC_BSLS	\ と |	✔	✔	✔
 KC_NONUS_HASH	KC_NUHS	Non-US # と ~	✔	✔	✔
-KC_SCOLON	KC_SCLN	; と :	✔	✔	✔
+KC_COLON	KC_SCLN	; と :	✔	✔	✔
 KC_QUOTE	KC_QUOT	' と "	✔	✔	✔
 KC_GRAVE	KC_GRV, KC_ZKHK	` と ~, JIS 全角/半角	✔	✔	✔
 KC_COMMA	KC_COMM	, と <	✔	✔	✔
@@ -79,7 +79,7 @@ KC_RIGHT	KC_RGHT	右矢印	✔	✔	✔
 KC_LEFT		左矢印	✔	✔	✔
 KC_DOWN		下矢印	✔	✔	✔
 KC_UP		上矢印	✔	✔	✔
-KC_NUMLOCK	KC_NUM	テンキー Num Lock と Clear
+KC_NUM_LOCK	KC_NUM	テンキー Num Lock と Clear
 KC_KP_SLASH	KC_PSLS	テンキー /	✔	✔	✔
 KC_KP_ASTERISK	KC_PAST	テンキー *	✔	✔	✔
 KC_KP_MINUS	KC_PMNS	テンキー -	✔	✔	✔

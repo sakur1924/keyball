@@ -32,7 +32,7 @@ enum custom_keycodes {
   KC_DOUBLE_CLICK_BTN1,                         // (0x5DB0): 1タップでダブルクリックできるBTN1
   KC_TRIPLE_CLICK_BTN1,                         // (0x5DB1): 1タップでトリプルクリックできるBTN1
   SFT_T_G_KC_A,                                 // (0x5DB2):
-  SFT_T_S_KC_SCOLON,                            // (0x5DB3):
+  SFT_T_S_KC_COLON,                            // (0x5DB3):
   COMBO_BRC,                                    // (0x5DB5):
   COMBO_select_BRC,                             // (0x5DB5):
   COMBO_S9_S0,                                  // (0x5DB5):
@@ -286,7 +286,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
       // SFT_Tのカスタムキーコード
     case SFT_T_G_KC_A:
-    case SFT_T_S_KC_SCOLON:
+    case SFT_T_S_KC_COLON:
       if (record->event.pressed) {
         // キーが押されたとき
         click_timer = timer_read();
@@ -300,8 +300,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
           if (keycode == SFT_T_G_KC_A) {
             tap_code16(G(KC_A));
           }
-          if (keycode == SFT_T_S_KC_SCOLON) {
-            tap_code16(S(KC_SCOLON));
+          if (keycode == SFT_T_S_KC_COLON) {
+            tap_code16(S(KC_COLON));
           }
         }
       }
