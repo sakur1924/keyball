@@ -53,10 +53,12 @@ void process_swipe_gesture(int16_t x, int16_t y) {
 
       if (x < 0) {
         // swipe left:
-        tap_code(KC_7);
+        tap_code(KC_APP);
+        tap_code(KC_LEFT);
       } else {
         // swipe right:
-        tap_code(KC_7);
+        tap_code(KC_APP);
+        tap_code(KC_RIGHT);
       }
     }
     unregister_code(KC_LCMD);
