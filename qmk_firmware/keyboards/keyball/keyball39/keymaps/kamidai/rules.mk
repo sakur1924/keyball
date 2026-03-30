@@ -14,4 +14,5 @@ COMBO_ENABLE = yes
 # ファームウェアのサイズを削減
 EXTRAFLAGS += -flto
 GRAVE_ESC_ENABLE = no  # 90バイト
-LT0_ENABLE = yes
+LTO_ENABLE = yes
+SPACE_CADET_ENABLE = no

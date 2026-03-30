@@ -50,3 +50,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 175
 // #define PERMISSIVE_HOLD
 // #define RETRO_TAPPING
+#undef LOCKING_SUPPORT_EBABLE
+#undef LOCKING_RESYNC_ENABLE
