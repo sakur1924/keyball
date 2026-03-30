@@ -99,13 +99,13 @@ void process_swipe_gesture(int16_t x, int16_t y) {
   // CMD
   if (current_keycode == CMD_T(KC_SPACE)) {
     unregister_code(KC_LCMD);
-    register_code(KC_LCTL);
 
     // ウインドウのサイズ変更と移動（BetterTouchToolで設定）
     if (my_abs(x) < my_abs(y)) {
       if (y < 0) {
         // swipe up: ウィンドウを最大化
-        tap_code(KC_8);
+        register_code(KC_LCMD);
+        tap_code(KC_TAB);
       } else {
         // swipe down: ウインドウを最小サイズで中央へ
         tap_code(KC_2);
@@ -113,16 +113,19 @@ void process_swipe_gesture(int16_t x, int16_t y) {
     }
     // ウインドウのサイズ変更と移動（BetterTouchToolで設定）
     if (my_abs(x) > my_abs(y)) {
+      register_code(KC_LCMD);
+      register_code(KC_APP);
       if (x < 0) {
         // swipe left: ウインドウを1/2サイズで左へ
-        tap_code(KC_4);
+        tap_code(KC_LEFT);
       } else {
         // swipe right: ウインドウを1/2サイズで右へ
-        tap_code(KC_6);
+        tap_code(KC_RIGHT);
       }
     }
 
-    unregister_code(KC_LCTL);
+    unregister_code(KC_LCMD);
+    unregister_code(KC_LCTL)
     register_code(KC_LCMD);
   }
 
