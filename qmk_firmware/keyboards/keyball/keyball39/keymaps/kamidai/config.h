@@ -52,3 +52,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define RETRO_TAPPING
 #undef LOCKING_SUPPORT_EBABLE
 #undef LOCKING_RESYNC_ENABLE
+#define LAYER_STATE_8BIT
