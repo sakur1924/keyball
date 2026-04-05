@@ -44,9 +44,7 @@ void process_swipe_gesture(int16_t x, int16_t y) {
       } else {
         // swipe down: ウインドウを最小サイズで中央へ
         register_code(KC_LALT);
-        if (y > 0){
-          tap_code(KC_TAB);
-        }
+        tap_code(KC_TAB);
       }
     }
     // ウインドウのサイズ変更と移動（BetterTouchToolで設定）
