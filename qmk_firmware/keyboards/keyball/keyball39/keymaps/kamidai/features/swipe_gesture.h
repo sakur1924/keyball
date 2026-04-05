@@ -68,7 +68,7 @@ void process_swipe_gesture(int16_t x, int16_t y) {
   }
 
   // shift
-  if (current_keycode == SFT_T(KC_LNG2)) {
+  if (current_keycode == SFT_T(KC_APP)) {
     unregister_code(KC_LALT);
     register_code(KC_LCMD);
 
@@ -99,7 +99,6 @@ void process_swipe_gesture(int16_t x, int16_t y) {
   // CMD
   if (current_keycode == CMD_T(KC_LNG2)) {
     unregister_code(KC_LCMD);
-
     // ウインドウのサイズ変更と移動（BetterTouchToolで設定)
     if (my_abs(x) < my_abs(y)) {
       if (y < 0) {
