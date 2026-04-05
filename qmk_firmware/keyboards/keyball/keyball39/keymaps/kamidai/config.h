@@ -46,7 +46,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // ファームウェアのサイズを削減
 #define NO_ACTION_ONESHOT  // 392バイト
-#define NO_ACTION_TAPPING
 
 #define TAPPING_TERM 175
 // #define PERMISSIVE_HOLD
