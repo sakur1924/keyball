@@ -35,7 +35,7 @@ void process_swipe_gesture(int16_t x, int16_t y) {
   // CMD
   if (current_keycode == SFT_T(KC_LNG2)) {
     // ウインドウのサイズ変更と移動（BetterTouchToolで設定)
-    unregister_code(KC_LSFT);
+    unregister_code(KC_LSFT);j
     if (my_abs(x) < my_abs(y)) {
       if (y < 0) {
         // swipe up: ウィンドウを最大化
@@ -43,8 +43,8 @@ void process_swipe_gesture(int16_t x, int16_t y) {
         tap_code(KC_TAB);
       } else {
         // swipe down: ウインドウを最小サイズで中央へ
-        register_code(KC_LALT);
-        tap_code(KC_TAB);
+        register_code(KC_LCMD);
+        tap_code(KC_D);
       }
     }
     // ウインドウのサイズ変更と移動（BetterTouchToolで設定）
